@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  height: 56px;
+  display: flex;
+  font-size: 20px;
+  padding: 16px 16px 0 16px;
+  width: 100%;
+  justify-content: space-between;
+  background: #3F51B5;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  z-index: 1;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.header-btn {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  text-indent: -30000px;
+  overflow: hidden;
+  opacity: 0.54;
+  -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#btn-refresh {
+  background: url(/ic_refresh_white_24px.svg) center center no-repeat;
+}
+
+#btn-add {
+  background: url(/ic_add_white_24px.svg) center center no-repeat;
+}
+

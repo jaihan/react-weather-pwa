@@ -1,0 +1,22 @@
+.forecast-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 128px;
+  height: 128px;
+}
+
+.icon-small {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 450px) {
+  .forecast-icon {
+    width: 96px;
+    height: 96px;
+  }
+  .icon-small {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,55 @@
+.dialog-container {
+  background: rgba(0, 0, 0, 0.57);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.dialog {
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.24), 0 14px 28px rgba(0, 0, 0, 0.48);
+  min-width: 280px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) translateY(30px);
+  transform: translate(-50%, -50%) translateY(30px);
+}
+
+.dialog > div {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.dialog-title {
+  padding-top: 20px;
+  font-size: 1.25em;
+}
+
+.dialog-body {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.dialog-body select {
+  width: 100%;
+  font-size: 2em;
+}
+
+.dialog-buttons {
+  padding: 8px !important;
+  float: right;
+}
+
+.dialog-buttons .button {
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: 1px solid gray;
+  margin-right: 5px
+}
