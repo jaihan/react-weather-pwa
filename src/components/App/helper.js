@@ -36,6 +36,7 @@ const INITIAL_DATA = ({
     }
   }
 });
+
 const CITIES_STORAGE_KEY = 'pw-cities';
 
 const SELECTED_CITIES = [{ key: 2295420, label: 'Bengaluru, IN' }];
@@ -47,30 +48,32 @@ const getUrl = (key, unit = 'c') => {
   return url;
 };
 
-const parseResult = (key, label = '') => (json) => {
-  if (json) {
-    const {
-      query: { created, results: { channel } }
-    } = json;
+function parseResult(key, label = '') {
+  return function (json) {
+    if (json) {
+      const {
+        query: { created, results: { channel } }
+      } = json;
 
-    const results = {
-      ...channel,
-      key,
-      label,
-      created
-    };
+      const results = {
+        ...channel,
+        key,
+        label,
+        created
+      };
 
-    return results;
+      return results;
+    }
   }
-};
+}
 
 export function isNullOrUndefined(v) {
   return v === null || v === undefined;
 }
 
 export function getInitialState() {
-  return get(CITIES_STORAGE_KEY).then(v => {
-    const cities = isNullOrUndefined(v) ? SELECTED_CITIES : v;
+  return get(CITIES_STORAGE_KEY).then(result => {
+    const cities = isNullOrUndefined(result) ? SELECTED_CITIES : result;
     const weatherData = {};
 
     return {

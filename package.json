@@ -18,5 +18,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://myname.github.io/react-weather-pwa"
+  "homepage": "http://myname.github.io/weather-pwa"
 }

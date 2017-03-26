@@ -31,10 +31,10 @@
 }
 
 #btn-refresh {
-  background: url(/ic_refresh_white_24px.svg) center center no-repeat;
+  background: url(./icons/ic_refresh_white_24px.svg) center center no-repeat;
 }
 
 #btn-add {
-  background: url(/ic_add_white_24px.svg) center center no-repeat;
+  background: url(./icons/ic_add_white_24px.svg) center center no-repeat;
 }
 
