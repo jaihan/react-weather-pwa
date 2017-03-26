@@ -1,4 +1,4 @@
-# Progressive weather web app built with React
+# Weather - Progressive web app built with React
 
 <img src='./public/demo.png' width='314' height='522' alt='screenshot' />
 
