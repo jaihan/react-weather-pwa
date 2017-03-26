@@ -1,6 +1,6 @@
 # Progressive weather web app built with React
 
-![Screen-shot](./public/demo.png =314x522)
+![Screen-shot](./public/demo.png=314x522)
 
 This project is a React port of the progress web app
 [`weather`](https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0)
