@@ -6,7 +6,7 @@ module.exports = {
     'build/static/**/!(*map*)'
   ],
   runtimeCaching: [{
-    urlPattern: 'https://query.yahooapis.com/v1/public/yql',
+    urlPattern: /^https:\/\/query.yahooapis.com\/v1\/public\/yql/,
     handler: 'networkFirst',
     options: {
       cache: {
