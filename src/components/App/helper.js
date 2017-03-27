@@ -89,7 +89,9 @@ export function getInitialState() {
 export function getForecastFromCache(key, label, unit) {
   const url = getUrl(key, unit);
   if ('caches' in window) {
-    return caches.match(url).then(parseResult(key, label));
+    return caches.match(url)
+      .then(r => r.json()) // json parse it
+      .then(parseResult(key, label));
   }
   else {
     return Promise.reject();
